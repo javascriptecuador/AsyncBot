@@ -10,7 +10,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => ctx.reply('Bienvenido'))
 bot.help((ctx) => ctx.reply('Esta seccion esta en desarrollo...'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
-bot.command('github', (ctx) => ctx.reply('Esta es la cuenta de JavaScript Ecuador en Github'))
+bot.command('github', (ctx) => ctx.reply('Esta es la cuenta de JavaScript Ecuador en Github https://github.com/javascriptecuador'))
 // En esa función se debería usar RegExp para cuando alguien salude, y el bot pueda responder
 bot.hears('Hola a todos', (ctx) => ctx.reply('Hola humano!'))
 bot.on('new_chat_members', (ctx) => {
